@@ -1,0 +1,11 @@
+body {
+	background-color: #5a8e22;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	margin: 2em 0 0 0;
+	font: 400 92px/84px Abril Fatface;
+	text-align: center;
+	color: #ffffff;
+}

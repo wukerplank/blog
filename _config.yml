@@ -1,0 +1,10 @@
+name: "wukerplank"
+description: ""
+
+url: "http://wukerplank.com"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+pygments: true

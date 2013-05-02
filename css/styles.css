@@ -2,10 +2,60 @@ body {
 	background-color: #5a8e22;
 	margin: 0;
 	padding: 0;
+	font-family: Helvetica;
 }
-h1 {
-	margin: 2em 0 0 0;
-	font: 400 92px/84px Abril Fatface;
+header h1 {
+	margin: 1em 0 0.5em 0;
+	font: 400 3em Abril Fatface;
 	text-align: center;
 	color: #ffffff;
+}
+header h1 a {
+	text-decoration: none;
+	color: #ffffff;
+}
+section#posts {
+	width: 920px;
+	margin: 0 auto;
+}
+article {
+	background-color: #FFF;
+	margin: 40px;
+}
+article h2 {
+	font-weight: bold;
+	font-size: 32px;
+}
+article h2 a {
+	text-decoration: none;
+	color: #000;
+}
+article p, article pre {
+	margin: 16px 0
+}
+article p:last-child, article p:last-child, article pre:last-child {
+	margin-bottom: 0;
+}
+article section.title {
+	padding: 20px 0 20px 40px;
+	border-bottom: 1px solid #BBB;
+}
+article section.content {
+	padding: 40px;
+}
+article section.meta {
+	border-top: 1px solid #BBB;
+	text-align: center;
+	padding: 20px;
+	color: #999;
+}
+article section.meta a {
+	color: #999;
+}
+code {
+	font-family: monospace;
+	overflow: scroll;
+}
+strong {
+	font-weight: bold;
 }

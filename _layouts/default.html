@@ -6,8 +6,25 @@
 	<meta name="description" content="{{ site.description }}">
 	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 	<link href='/css/styles.css' rel='stylesheet' type='text/css'>
+	<link href='/css/code.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	{{ content }}
+	{% include header.html %}
+	
+	{% for post in site.posts %}	
+		<section id="posts">
+			<article>
+				<section class="title">
+					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				</section>
+				<section class="content">
+					{{ post.content }}
+				</section>
+				<section class="meta">
+					<a href="{{ post.url }}">Permalink</a> &mdash; Posted on <strong>{{ post.date | date: "%d.%m.%Y" }}</strong> at <strong>{{ post.date | date: "%H:%M" }}</strong><br />
+				</section>
+			</article>
+		</section>
+	{% endfor %}
 </body>
 </html>
